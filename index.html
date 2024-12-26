@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Using JS</title>
+    <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" id="display">
+    <div class="button-container">
+    <button class="btn" onclick="inputdisplay =  ''; document.querySelector('#display').value=inputdisplay;">c</button>
+    <button class="btn" onclick="inputdisplay = inputdisplay + '1'; document.querySelector('#display').value=inputdisplay;" >1</button>
+    <button class="btn" onclick="inputdisplay = inputdisplay + '2'; document.querySelector('#display').value=inputdisplay;" >2</button>
+    <button class="btn" onclick="inputdisplay = inputdisplay + '+'; document.querySelector('#display').value=inputdisplay;" >+</button>
+    <button class="btn" onclick="inputdisplay = inputdisplay + '3'; document.querySelector('#display').value=inputdisplay;" >3</button>
+    <button class="btn" onclick="inputdisplay = inputdisplay + '4'; document.querySelector('#display').value=inputdisplay;" >4</button>
+    <button class="btn" onclick="inputdisplay = inputdisplay + '-'; document.querySelector('#display').value=inputdisplay;" >-</button>
+    <button class="btn" onclick="inputdisplay = inputdisplay + '5'; document.querySelector('#display').value=inputdisplay;" >5</button>
+    <button class="btn" onclick="inputdisplay = inputdisplay + '6'; document.querySelector('#display').value=inputdisplay;" >6</button>
+    <button class="btn" onclick="inputdisplay = inputdisplay + '*'; document.querySelector('#display').value=inputdisplay;" >*</button>
+    <button class="btn" onclick="inputdisplay = inputdisplay + '7'; document.querySelector('#display').value=inputdisplay;" >7</button>
+    <button class="btn" onclick="inputdisplay = inputdisplay + '8'; document.querySelector('#display').value=inputdisplay;" >8</button>
+    <button class="btn" onclick="inputdisplay = inputdisplay + '/'; document.querySelector('#display').value=inputdisplay;" >/</button>
+    <button class="btn" onclick="inputdisplay = eval(inputdisplay); document.querySelector('#display').value=inputdisplay;" >=</button>
+    <button class="btn" onclick="inputdisplay = inputdisplay + '.'; document.querySelector('#display').value=inputdisplay;" >.</button>
+    <button class="btn" onclick="inputdisplay = inputdisplay + '0'; document.querySelector('#display').value=inputdisplay;" >0</button>
+    </div>
+  </div>  
+    <script>  
+         let inputdisplay = '';
+document.querySelector('#display').value=inputdisplay;
+    </script> 
+</body>
+</html>
+
